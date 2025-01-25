@@ -46,3 +46,4 @@ def scan_target(target, ports):
                     key = f"{product} {version}"
                     vulnerabilities.setdefault(key, [])
                     vulnerabilities[key].extend(cve_list)
+    #Next step is to complete full nvd integration
