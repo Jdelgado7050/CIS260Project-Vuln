@@ -1,18 +1,49 @@
-#This is the start of creating a vulnerability scanner
-import nmap 
-#test nmap functionality #print(nmap.__version__) 
+#This is the start of creating a vuln scanner
+import nmap
+import requests
+
+
+NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 
 def scan_target(target, ports):
+    
     scanner = nmap.PortScanner()
-    print("Scanning ports on {target} to see if any are open")
 
-    scanner.scan(target, arguments= f" -p {ports} -sV" )
+    # Decide what ports to scan
+    if ports == "top1000":
+        scan_args = "--top-ports 1000 -sV"
+    else:
+        scan_args = f"-p {ports} -sV"
 
+    print(f"Scanning {target} with arguments: {scan_args}\n")
+    
+    # Run the Nmap scan
+    scanner.scan(target, arguments=scan_args)
+
+    #Stores vulnerabilities
+    vulnerabilities = {}
+
+    # Iterate over discovered hosts
     for host in scanner.all_hosts():
-        print("n[+] Host: {host} ({scanner[host].hostname()})")
+        print(f"[+] Host: {host} ({scanner[host].hostname()})")
+
+        # Only check TCP ports here
+        if 'tcp' not in scanner[host]:
+            continue
+
         for port, info in scanner[host]['tcp'].items():
-            print(f"Port {port}: {info['name']} ({info['state']}) - {info['product']} {info['version']}")
-if __name__ == "__main__":
-    target_ip = input("Enter target IP: ")
-    scan_ports = input("Enter ports to scan (recommended ports: 80, 443, & 22): ")
-    scan_target(target_ip, scan_ports)
+            service = info['name']
+            product = info.get('product', 'Unknown')
+            version = info.get('version', 'Unknown')
+            state = info['state']
+
+            print(f"  Port {port}: {service} ({state}) - {product} {version}")
+
+            # If product/version is identified, search for CVEs in NVD
+            if product != "Unknown" and version != "Unknown":
+                cve_list = check_cve_in_nvd(product, version)
+                if cve_list:
+                    key = f"{product} {version}"
+                    vulnerabilities.setdefault(key, [])
+                    vulnerabilities[key].extend(cve_list)
+    #Next step is to complete full nvd integration
