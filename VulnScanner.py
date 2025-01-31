@@ -9,7 +9,7 @@ def scan_target(target, ports):
     
     scanner = nmap.PortScanner()
 
-    # Decide what ports to scan
+    # Decide what ports to scan, top 1000 common ports added for user convenience
     if ports == "top1000":
         scan_args = "--top-ports 1000 -sV"
     else:
@@ -23,7 +23,7 @@ def scan_target(target, ports):
     #Stores vulnerabilities
     vulnerabilities = {}
 
-    # Iterate over discovered hosts
+    
     for host in scanner.all_hosts():
         print(f"[+] Host: {host} ({scanner[host].hostname()})")
 
@@ -46,4 +46,4 @@ def scan_target(target, ports):
                     key = f"{product} {version}"
                     vulnerabilities.setdefault(key, [])
                     vulnerabilities[key].extend(cve_list)
-    #Next step is to complete full nvd integration
+    #Next step is to complete full nvd api integration and possible UDP port scan
