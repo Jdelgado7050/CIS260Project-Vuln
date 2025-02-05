@@ -4,6 +4,7 @@ When running this project, you will need to install modules such as nmap and req
 I will be building functionalities on top throughout this project and after.
 
 Features:
+
 Port Scanning – Uses nmap to detect open ports & running services.
 
 Cross-Platform – Works on Windows, Linux, macOS.
