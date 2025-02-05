@@ -5,7 +5,9 @@ I will be building functionalities on top throughout this project and after.
 
 Features:
 Port Scanning – Uses nmap to detect open ports & running services.
+
 Cross-Platform – Works on Windows, Linux, macOS.
+
 Vulnerability Lookup – Queries the NVD API for known CVEs.
 
 
