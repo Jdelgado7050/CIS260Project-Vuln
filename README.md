@@ -12,4 +12,3 @@ Cross-Platform – Works on Windows, Linux, macOS.
 Vulnerability Lookup – Queries the NVD API for known CVEs.
 
 
-Nice job on starting the documentation, please let me know if you needed anything else on my end - Md 
