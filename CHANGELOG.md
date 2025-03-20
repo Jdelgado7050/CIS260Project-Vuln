@@ -2,5 +2,5 @@
 
 Previous version 1.0.0: Base NVD vulnerability scanner
 
-Upcoming version 1.0.1: Introducing severity to vulnerability findings
+Current Version 1.0.1: Introducing severity to vulnerability findings and includes scanner name
 
