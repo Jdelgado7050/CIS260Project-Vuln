@@ -18,22 +18,24 @@ Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vul
 1. Extract the download
 2. Navigate to the download folder
    -For Windows, double-click ShadowScanner.exe
+
    -For Linux, open a terminal and `run ./ShadowScanner`
 
 # For Python Source Code (Requires Python):
 
 1. Clone the repository:
 
-git clone https://github.com/Jdelgado7050/CIS260Project-Vuln
-cd CIS260Project-Vuln
+`git clone https://github.com/Jdelgado7050/CIS260Project-Vuln`
+
+`cd CIS260Project-Vuln`
 
 2. Install dependencies:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 3. Run the application:
 
-python ShadowScanner.py
+`python ShadowScanner.py`
 
 
 
