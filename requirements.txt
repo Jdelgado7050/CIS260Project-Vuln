@@ -1,0 +1,5 @@
+tkinter
+nmap
+requests
+functools
+threading
