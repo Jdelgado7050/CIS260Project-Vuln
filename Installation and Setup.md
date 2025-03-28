@@ -6,7 +6,7 @@ Before installing the Shadow Scanner application version, please ensure your sys
 -Windows/Linux/macOS
 -Python (If you are running from source)
 
-Installation####
+Installation
 
 1. Download the application****
 Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vuln/releases
