@@ -9,10 +9,10 @@
 
 # Installation
 
-1. Download the application
+### 1. Download the application
 Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vuln/releases
 
-# 2. Running the application
+### 2. Running the application
 
 ### For executable version
 1. Extract the download
@@ -21,7 +21,7 @@ Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vul
 
    -For Linux, open a terminal and `run ./ShadowScanner`
 
-# For Python Source Code (Requires Python):
+### For Python Source Code (Requires Python):
 
 1. Clone the repository:
 
