@@ -9,10 +9,10 @@
 
 # Installation
 
-### 1. Download the application
+### Download the application
 Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vuln/releases
 
-### 2. Running the application
+# Running the application
 
 ### For executable version
 1. Extract the download
