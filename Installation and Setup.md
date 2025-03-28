@@ -4,6 +4,7 @@
 ## Before installing the Shadow Scanner application version, please ensure your system meets the following requirements:
 
 -Windows/Linux/macOS
+
 -Python (If you are running from source)
 
 # Installation
