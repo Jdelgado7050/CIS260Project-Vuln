@@ -37,9 +37,9 @@ Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vul
 
 `python ShadowScanner.py`
 
-## Requirements text file can be found here 
+## Requirements text file can be found here:
 
-requirements.txt
+https://github.com/Jdelgado7050/CIS260Project-Vuln/blob/main/requirements.txt
 
 
 
