@@ -18,7 +18,7 @@ Download the latest release at https://github.com/Jdelgado7050/CIS260Project-Vul
 1. Extract the download
 2. Navigate to the download folder
    -For Windows, double-click ShadowScanner.exe
-   -For Linux, open a terminal and run ./ShadowScanner
+   -For Linux, open a terminal and `run ./ShadowScanner`
 
 # For Python Source Code (Requires Python):
 
