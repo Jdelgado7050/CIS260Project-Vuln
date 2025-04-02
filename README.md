@@ -21,3 +21,7 @@ Shadow Scanner is released under the MIT License. See the LICENSE file for more 
 
 For issues, feature requests, or improvements, please open an issue on the GitHub Issues page.
 
+### Disclaimer
+
+Please ensure this tool is used for ethical purposes only. Proper authorization is required before scanning any network or system.
+
