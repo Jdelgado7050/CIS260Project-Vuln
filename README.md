@@ -1,14 +1,23 @@
-# CIS260 Project - ShadowScanner
-This project is a Vulnerability Scanner that scans a target host for open ports, detects running services, and queries the National Vulnerability Database (NVD) API for known CVE vulnerabilities associated with detected services.
-When running this project, you will need to install modules such as nmap and requests.
-I will be building functionalities on top throughout this project and after.
+# ShadowScanner
+Shadow Scanner is an open-source network vulnerability scanner designed to identify open ports, services, and potential security risks associated with running software. It integrates with the National Vulnerability Database (NVD) to fetch relevant CVE data and assess risk severity.
 
-Features:
+## Features
 
-Port Scanning – Uses nmap to detect open ports & running services.
+- Scans open ports and detects running services
 
-Cross-Platform – Works on Windows, Linux, macOS.
+- Retrieves vulnerability information from the NVD API
 
-Vulnerability Lookup – Queries the NVD API for known CVEs.
+- Displays severity levels based on CVSS scores
 
+- Supports scanning specific ports or the top 1000 ports
+
+- Provides a GUI for ease of use
+
+## License
+
+Shadow Scanner is released under the MIT License. See the LICENSE file for more details.
+
+## Support
+
+For issues, feature requests, or improvements, please open an issue on the GitHub Issues page.
 
